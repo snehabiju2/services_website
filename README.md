@@ -57,3 +57,6 @@ loginForm.addEventListener('submit', (e) => {
     });
 });
 
+
+<a href="home.html">Go to Home</a>
+
