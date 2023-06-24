@@ -1,68 +1,91 @@
-* {box-sizing: border-box}
- 
-/* Add padding to containers */
-body
-{
-   background-color:rgb(177, 168, 168); 
+*{
+  font-family: 'poppins' ,sans-serif;
 }
-.form {
-    color:#160535 ;
+body{
+  background-image: url("./image3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.container{
+  width: 350px;
   display: flex;
   flex-direction: column;
+  padding: 0 15px 0 15px;
+  position:relative
+}
+span{
+  color: #fff;
+  font-size:medium;
+  display: flex;
   justify-content: center;
-  margin: 4px 30%;
-  padding: 16px;
-  background:#f4e6ff;
+  padding: 10px 0 10px 0;
 }
-
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
+header{
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+.input-field .input{
+  height: 45px;
+  width: 87%;
   border: none;
-  background:white;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 0 0 45px;
+  background: rgba(255,255,255,0.1);
   outline: none;
 }
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid;
-  background-color:  #168565;
-  margin-bottom: 25px;
+i{
+  position: relative;
+  top: -33px;
+  left: 17px;
+  color: #fff;
 }
-
-/* Set a style for the submit/register button */
-.registerbutton {
-  background-color: #160535;
-  
-  color:white;
-  padding: 16px 20px;
-  margin: 8px 0;
+::-webkit-input-placeholder{
+  color: #fff;
+}
+.submit{
   border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  outline: none;
+  width: 100%;
+  color: black;
+  background: rgba(255,255,255,0.7);
   cursor: pointer;
-  width: 40%;
-  opacity: 0.9;
-  margin-left: 30%;
+  transition: .3s ;
 }
-
-.registerbutton:hover {
-  opacity:1;
+.submit:hover{
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
-/* Add a blue text color to links */
-a {
-  color: #160535;
+.two-col{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  font-size: small;
+  margin-top: 10px;
+  position: absolute;
+  left: 40%;
+  top:100%
 }
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: white;
-  text-align: center;
+.one{
+  display: flex;
+}
+label a{
+  text-decoration: none;
+  color: #fff;
 }
