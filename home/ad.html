@@ -18,7 +18,7 @@
   </head>
     <style>
     body{
-    background-image: url("image3.jpg");
+    background-image: url("desktop-wallpaper-indigo-background-and-41-b-scb-wp-bg-collection-indigo-aesthetic.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
   background-size: 100% 100%;
@@ -36,6 +36,8 @@
               <i class="fas fa-dollar"></i>
             </div>
             <h3>Financial Audit, Financial Planning, Handling Taxes (CA)</h3>
+            <button class="open-button" ><a href="./np1.html">Open Form</a></button>
+
           </div>
         </div>
         <div class="column">
@@ -44,6 +46,9 @@
               <i class="fas fa-user-shield"></i>
             </div>
             <h3>Cybersecurity Audit of IT network (Cybersecurity Expert)</h3>
+            <button class="open-button" ><a href="./np2.html">Open Form</a></button>
+
+            
           </div>
         </div>
         <div class="row">
@@ -53,6 +58,8 @@
                         <i class="fas fa-house"></i>
                     </div>
             <h3>House Construction or Interior design (Architect)</h3>
+            <button class="open-button" ><a href="./np3.html">Open Form</a></button>
+
                 </div>
             </div>
         <div class="column">
@@ -61,22 +68,42 @@
               <i class="fas fa-legal"></i>
             </div>
             <h3>Legal help related to Property, Loans, Accidents etc. (Lawyer)</h3>
+            <button class="open-button" ><a href="./np4.html">Open Form</a></button>
+
+
           </div>
         </div>
         </div>
         <div class="icon-wrap">
-            <a href="../profile/profile.html"><i class="fa-solid fa-user"></i>
+            <a href="#profile"><i class="fa-solid fa-user"></i>
     </div>
         <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- The sidebar -->
 <div class="sidebar">
-  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="#refresh"><i class="fa fa-fw fa-refresh"></i> Refresh</a>
-  <a href="#help"><i class="fa fa-fw fa-question-circle"></i> Help</a>
+  <a href="#contact_us"><i class="fa fa-fw fa-phone"></i> Contact Us</a>
   <a href="#feedback"><i class="fa fa-pencil"></i> Feedback</a>
 </div>
+
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
 
     </section>
   </body>
