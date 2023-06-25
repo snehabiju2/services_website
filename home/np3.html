@@ -1,0 +1,47 @@
+<form action="action_page.php">
+  <link rel="stylesheet" href="np1.css" />
+
+  <div class="container">
+    <h1>Appointment Request Form (Architect)</h1>
+    <p>Please fill in this form to book an appointment.</p>
+    <hr>
+    
+    <label for="fn"><b>Full Name</b>
+    <input type="text" placeholder="Enter Full Name" name="fn" id="fn" required></label>
+
+    <label for="phn"><b>Contact Number</b>
+    <input type="tel" placeholder="Enter Contact Number" name="phn" id="phn" required></label>
+
+
+    <label for="email"><b>Email</b>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required></label>
+
+    <fieldset>
+      <legend>Appointment request</legend>
+      <div class="two-cols">
+        <label>
+          Date
+          <input type="date" name="Appointment request" required>
+        </label>
+        <div class="inline">
+          <label>
+            <input type="hidden" name="Morning desired" value="no">
+            <input type="checkbox" name="Morning desired" value="yes">
+            Morning
+          </label>
+          <label>
+            <input type="hidden" name="Afternoon desired" value="no">
+            <input type="checkbox" name="Afternoon desired" value="yes">
+            Afternoon
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    
+   <hr>
+
+    <button type="submit" class="registerbtn">Submit Request</button>
+  </div>
+
+  
+</form>
