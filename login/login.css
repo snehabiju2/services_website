@@ -82,7 +82,36 @@ i{
 .one{
     display: flex;
 }
+.two{
+    text-align: center;
+    padding-bottom: 8px;
+}
+.two div a{
+    color: white;
+    text-decoration: none;
+}
 label a{
     text-decoration: none;
     color: #fff;
+    
+}
+.Login-register {
+    font-size: .4cm;
+    color:#fff;
+    text-align: center;
+    font-weight: 6;
+    margin: 5px 55px 10px;
+    
+
+}
+.Login-register p a {
+    color: #fff;
+text-decoration: none;
+    font-weight: 600;
+    
+}
+.Login-register p a:hover{
+    text-decoration: underline;
+    
+
 }
