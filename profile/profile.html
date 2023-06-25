@@ -1,5 +1,6 @@
 <html>
 <head>
+    <title>Profile</title>
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" type="text/css" bref="bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -8,10 +9,10 @@
     <div class="container">
         <div class="main">
             <div class="topbar">
-                <a href="">Logout</a>
+                <a href="#" id="logoutLink">Logout</a>
                
-            
-                <a href="">Home</a>
+                
+                <a href="../home/ad.html">Home</a>
                
             </div>
             <div class="row">
@@ -33,7 +34,7 @@
                                     <h5>Full Name</h5>
                                 </div>
                             </div class="col-md-9 text secondary">
-                            <input class="input" placeholder=" Eg: abc"></input> 
+                            <input class="input" placeholder=" Eg: abc" id="fullNameInput"> 
                             
                                 
                         </div>
@@ -81,6 +82,51 @@
 </div>
 </div>
 
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAqLdD_QDjhN9g3HLA_PPDtK-8-gZoOe2k",
+      authDomain: "services-project-d9012.firebaseapp.com",
+      databaseURL: "https://services-project-d9012-default-rtdb.firebaseio.com",
+      projectId: "services-project-d9012",
+      storageBucket: "services-project-d9012.appspot.com",
+      messagingSenderId: "801261924275",
+      appId: "1:801261924275:web:2add6cf0adb9d12541a5c6",
+      measurementId: "G-B1Q8NLNHJG"
+    };
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+    // Function to handle the sign out process
+    function signOut() {
+        auth.signOut()
+            .then(() => {
+                // Sign out successful
+                alert('Logout successful');
+                window.location.href = '../login/login.html'; // Redirect to the login page
+            })
+            .catch((error) => {
+                // An error occurred
+                alert('Logout failed: ' + error.message);
+            });
+    }
+    // Add click event listener to logout link
+    const logoutLink = document.getElementById('logoutLink');
+    logoutLink.addEventListener('click', signOut);
+</script>
 </body>
 
 </html>
